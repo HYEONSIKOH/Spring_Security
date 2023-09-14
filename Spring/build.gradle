@@ -1,0 +1,52 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.15'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.testng:testng:7.1.0'// jpa
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client' // MariaDB
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis' // redis
+
+	implementation 'org.springframework.boot:spring-boot-starter-mail' // 메일
+
+	compileOnly 'org.projectlombok:lombok'
+
+	implementation 'org.springframework.security:spring-security-crypto:5.7.1'
+
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'io.projectreactor:reactor-test'
+
+	implementation 'org.springframework.boot:spring-boot-starter-security' // 스프링 Security
+	implementation 'javax.xml.bind:jaxb-api:2.3.0'
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
+	implementation'com.google.code.gson:gson:2.8.7'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
