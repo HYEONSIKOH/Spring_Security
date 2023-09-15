@@ -7,10 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-<<<<<<< HEAD:Spring/src/main/java/com/example/security/Service/MemberService.java
-=======
-import java.util.List;
->>>>>>> main:security/security/src/main/java/com/example/security/Service/MemberService.java
 import java.util.Optional;
 
 @Service
@@ -19,13 +15,6 @@ public class MemberService {
     PasswordEncoder passwordEncoder; // DI
     MemberRepository memberRepository;
 
-<<<<<<< HEAD:Spring/src/main/java/com/example/security/Service/MemberService.java
-=======
-    public MemberService (MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
-
->>>>>>> main:security/security/src/main/java/com/example/security/Service/MemberService.java
     // 회원가입
     public void Register (MemberForm form) {
         // String pw = passwordEncoder.encode(member.setPassword);

@@ -30,6 +30,7 @@ public class AuthenticationConfig {
                 .authorizeRequests()
                 .antMatchers("/login").permitAll()
                 .antMatchers("/member").permitAll()
+                .antMatchers("/email").permitAll()
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)

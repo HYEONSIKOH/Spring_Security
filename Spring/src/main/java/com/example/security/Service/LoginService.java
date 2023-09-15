@@ -7,12 +7,15 @@ import com.example.security.utils.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
 public class LoginService {
     MemberRepository memberRepository;
+
+    PasswordEncoder passwordEncoder; // DI
 
     @Autowired
     public LoginService(MemberRepository memberRepository) {
@@ -32,7 +35,7 @@ public class LoginService {
 
         // 2. Pw가 틀린 경우
         String userPasswordFromDB = member.getPassword();
-        if (!loginForm.getPw().equals(userPasswordFromDB)) {
+        if (!passwordEncoder.matches(userPasswordFromDB, loginForm.getPw() )) {
             throw new RuntimeException("비밀번호가 일치하지 않습니다.");
         }
 
