@@ -23,6 +23,7 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.testng:testng:7.1.0'// jpa
@@ -47,6 +48,9 @@ dependencies {
 	implementation'com.google.code.gson:gson:2.8.7'
 
 	implementation 'org.jsoup:jsoup:1.14.3' // Jsoup 의존성 추가
+
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 }
 
 tasks.named('test') {

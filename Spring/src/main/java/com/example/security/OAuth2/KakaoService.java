@@ -1,12 +1,9 @@
-package com.example.security.Kakao;
+package com.example.security.OAuth2;
 
 import com.example.security.Dto.KakaoDataForm;
-import com.example.security.Repository.MemberRepository;
-import com.example.security.domain.Member;
-import com.example.security.utils.JwtUtil;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonElement;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -15,6 +12,9 @@ import java.net.URL;
 
 @Service
 public class KakaoService {
+
+    @Value("${spring.security.oauth2.client.registration.kakao.client-id}")
+    private String ClientId;
 
     public String getKaKaoAccessToken(String code){
         String access_Token="";
@@ -33,9 +33,9 @@ public class KakaoService {
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
             StringBuilder sb = new StringBuilder();
             sb.append("grant_type=authorization_code");
-            sb.append("&client_id=7f2ea7190047c3ce9cdd64396511fb06"); // TODO REST_API_KEY 입력
+            sb.append("&client_id=").append(ClientId); // TODO REST_API_KEY 입력
             sb.append("&redirect_uri=http://localhost:8080/login/kakao"); // TODO 인가코드 받은 redirect_uri 입력
-            sb.append("&code=" + code);
+            sb.append("&code=").append(code);
             bw.write(sb.toString());
             bw.flush();
 

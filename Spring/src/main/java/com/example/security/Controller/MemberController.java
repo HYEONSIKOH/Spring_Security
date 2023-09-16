@@ -2,13 +2,10 @@ package com.example.security.Controller;
 
 import com.example.security.Dto.ChangePwForm;
 import com.example.security.Dto.CheckPwForm;
-import com.example.security.Dto.KakaoDataForm;
 import com.example.security.Dto.MemberForm;
-import com.example.security.Kakao.KakaoService;
 import com.example.security.Service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
