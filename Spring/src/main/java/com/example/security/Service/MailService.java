@@ -25,8 +25,8 @@ import org.springframework.stereotype.Service;
 @Service
 @PropertySource("classpath:application.properties")
 public class MailService {
-    @Autowired
-    JavaMailSender emailSender;
+
+    final JavaMailSender emailSender;
 
     public static final String ePw = createKey();
 

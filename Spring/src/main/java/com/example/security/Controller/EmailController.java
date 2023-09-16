@@ -15,12 +15,11 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 @Slf4j
 public class EmailController {
-    @Autowired
-    // 이메일 인증
-    private MailService mailService;
 
-    @Autowired
-    private EmailAuthService serivce;
+    // 이메일 인증
+    private final MailService mailService;
+
+    private final EmailAuthService serivce;
 
     @PostMapping("mailConfirm")
     public String mailConfirm(@RequestParam String email) throws Exception {

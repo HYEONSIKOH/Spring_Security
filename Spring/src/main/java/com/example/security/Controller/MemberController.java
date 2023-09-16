@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 @Slf4j
 public class MemberController {
-    @Autowired
-    private MemberService memberService;
+
+    private final MemberService memberService;
 
     // 회원가입 API
     @PostMapping("register")
@@ -47,18 +47,5 @@ public class MemberController {
         memberService.changePassword(changePwForm.getNickname(), changePwForm.getEmail(), changePwForm.getPassword());
 
         return ResponseEntity.ok().body("Sucess of change password");
-    }
-
-    @Autowired
-    private KakaoService kakaoService;
-
-    @GetMapping("/kakao")
-    public ResponseEntity<KakaoDataForm> KakaoLogin (@RequestParam String code) {
-        System.out.println("code = " + code);
-
-        String token = kakaoService.getKaKaoAccessToken(code);
-        KakaoDataForm res = kakaoService.createKakaoUser(token);
-
-        return ResponseEntity.ok().body(res);
     }
 }

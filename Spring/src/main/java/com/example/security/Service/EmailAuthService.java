@@ -14,8 +14,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class EmailAuthService {
 
-    @Autowired
-    private RedisTemplate<String, String> redisTemplate;
+    private final RedisTemplate<String, String> redisTemplate;
 
     public void saveData(String key, String value) {
         redisTemplate.opsForValue().set(key, value);

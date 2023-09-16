@@ -1,26 +1,25 @@
 package com.example.security.Service;
 
+import com.example.security.Dto.KakaoDataForm;
 import com.example.security.Repository.MemberRepository;
 import com.example.security.Dto.LoginForm;
 import com.example.security.domain.Member;
 import com.example.security.utils.JwtUtil;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
 public class LoginService {
-    MemberRepository memberRepository;
 
-    PasswordEncoder passwordEncoder; // DI
+    private final MemberRepository memberRepository;
 
-    @Autowired
-    public LoginService(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
+    private final BCryptPasswordEncoder passwordEncoder; // DI
 
     @Value("${jwt.secret}")
     String secretKey;
@@ -35,7 +34,7 @@ public class LoginService {
 
         // 2. Pw가 틀린 경우
         String userPasswordFromDB = member.getPassword();
-        if (!passwordEncoder.matches(userPasswordFromDB, loginForm.getPw() )) {
+        if (!passwordEncoder.matches(loginForm.getPw() ,userPasswordFromDB) ) {
             throw new RuntimeException("비밀번호가 일치하지 않습니다.");
         }
 
@@ -45,11 +44,11 @@ public class LoginService {
         return JwtUtil.creatJwt(userid, secretKey, expiredMs);
     }
 
-    public String KakaoLogin (String email) {
+    public String KakaoLogin (KakaoDataForm kakaoDataForm) {
 
-        // 1. Id가 틀린 경우
-        Member member = memberRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("아이디가 존재하지 않습니다"));
+        // 1. 카카오로 연동하지 않은 경우
+        Member member = memberRepository.findByKakaoid(kakaoDataForm.getId())
+                .orElseThrow(() -> new RuntimeException("카카오로 연동된 계정이 없습니다."));
 
         // 3. 로그인이 정상적으로 되었을 경우!
         long userid = member.getId(); // id값을 기준으로 userid가져오기!

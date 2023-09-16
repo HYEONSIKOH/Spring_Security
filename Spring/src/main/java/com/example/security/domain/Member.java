@@ -28,6 +28,9 @@ public class Member {
 
     private int weight;
 
+    @Column(name = "kakaoid", nullable = true)
+    private Long kakaoid;
+
     public Member(String email, String nickname, String password, int height, int weight) {
         this.email = email;
         this.nickname = nickname;

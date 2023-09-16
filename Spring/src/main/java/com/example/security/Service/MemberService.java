@@ -3,17 +3,25 @@ package com.example.security.Service;
 import com.example.security.Dto.MemberForm;
 import com.example.security.Repository.MemberRepository;
 import com.example.security.domain.Member;
+import lombok.AllArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @Service
 public class MemberService {
 
-    PasswordEncoder passwordEncoder; // DI
-    MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
+
+    private final BCryptPasswordEncoder passwordEncoder; // DI
+
 
     // 회원가입
     public void Register (MemberForm form) {
