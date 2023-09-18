@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/email")
-@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+@CrossOrigin(origins = "https://web-test-cloudtype-iciy2almolkc88.sel5.cloudtype.app/", allowCredentials = "true")
 @Slf4j
 public class EmailController {
 
