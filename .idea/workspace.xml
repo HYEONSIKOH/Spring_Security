@@ -1,71 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="823e5e72-ebea-45b4-aeed-942fb8520963" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/hs_err_pid47944.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/hs_err_pid48872.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/hs_err_pid53676.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/hs_err_pid54468.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/hs_err_pid56968.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/hs_err_pid59332.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/com/example/security/Service/MailFormHtml/MailForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/com/example/security/MailFormHtml/MailForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/com/example/security/Service/banner_pattern.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/com/example/security/MailFormHtml/banner_pattern.svg" afterDir="false" />
-    </list>
+    <list default="true" id="2bddcee3-8188-4a4a-828a-cafd57b7aa26" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="security" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2VQFSIa1vmVYumTh3LNgbmnzDxC" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2VAEj7HNAcaEDD2EDwsRCjRzgMz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hyeonsikoh/Desktop/Spring&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hyeonsikoh/Desktop/Spring/Spring&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;486363196bdf42f1a9b5775eb36eca6a&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Spring/src/main/java/com/example/security" />
-      <recent name="$PROJECT_DIR$/Spring/src/main/java/com/example/security/Service/MailFormHtml" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/security/Service" />
+      <recent name="D:\Spring_Security\Spring\src\main\java\Security" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="security.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.security.SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="823e5e72-ebea-45b4-aeed-942fb8520963" name="변경" comment="" />
-      <created>1694760395943</created>
+      <changelist id="2bddcee3-8188-4a4a-828a-cafd57b7aa26" name="변경" comment="" />
+      <created>1694270617646</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694760395943</updated>
-      <workItem from="1694760397022" duration="115000" />
-      <workItem from="1694760788705" duration="22000" />
-      <workItem from="1694760813214" duration="21000" />
-      <workItem from="1694760870767" duration="124000" />
-      <workItem from="1694761004526" duration="220000" />
-      <workItem from="1694761227036" duration="6000" />
+      <updated>1694270617646</updated>
+      <workItem from="1694270620200" duration="68000" />
+      <workItem from="1694270701105" duration="2480000" />
+      <workItem from="1694359506912" duration="1302000" />
+      <workItem from="1694532588390" duration="1938000" />
+      <workItem from="1694534694229" duration="617000" />
+      <workItem from="1694535608320" duration="76000" />
+      <workItem from="1694536285032" duration="2253000" />
+      <workItem from="1694538558315" duration="800000" />
+      <workItem from="1694541611719" duration="325000" />
+      <workItem from="1694542142477" duration="5074000" />
+      <workItem from="1694547226395" duration="2841000" />
+      <workItem from="1694610923266" duration="3822000" />
+      <workItem from="1694686379548" duration="3793000" />
+      <workItem from="1694691165101" duration="12991000" />
+      <workItem from="1694752502851" duration="7392000" />
+      <workItem from="1694761300894" duration="6275000" />
+      <workItem from="1694839548419" duration="13657000" />
+      <workItem from="1694857628153" duration="648000" />
+      <workItem from="1694875564446" duration="4701000" />
+      <workItem from="1694880279082" duration="4000" />
+      <workItem from="1694880296340" duration="8494000" />
+      <workItem from="1694998737201" duration="5000" />
+      <workItem from="1695012843807" duration="5503000" />
+      <workItem from="1695026257040" duration="1051000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
 </project>
